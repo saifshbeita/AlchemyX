@@ -13,8 +13,8 @@
 
 AlchemyX is an autonomous AI agent built on IBM watsonx Orchestrate (ABM Watson X-Architecture) that eliminates information fragmentation across enterprise systems:
 
-- **Data Synthesizer** – retrieves and reconciles data from CRM, ERP, Messaging, Databases, and Email into one coherent narrative
-- **Trust Engine** – provides 100% source attribution (e.g., [Source: CRM]) to ensure transparency and prevent hallucinations
+- **Data Synthesizer** - retrieves and reconciles data from CRM, ERP, Messaging, Databases, and Email into one coherent narrative
+- **Trust Engine** - provides 100% source attribution (e.g., [Source: CRM]) to ensure transparency and prevent hallucinations
 
 Built with Google AI Studio frontend, powered by IBM watsonx, and designed for enterprise-scale data intelligence.
 
@@ -35,19 +35,7 @@ Built with Google AI Studio frontend, powered by IBM watsonx, and designed for e
 - **Frontend:** Google AI Studio
 - **Languages:** TypeScript, HTML, Tailwind CSS
 
-## License
-
-MIT License
 
 View your app in AI Studio: https://ai.studio/apps/drive/1pgjNVF8LZRxnptwEhBhEQkVpy-Zc0eGA
 
-## Run Locally
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
