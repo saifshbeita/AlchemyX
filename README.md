@@ -2,10 +2,7 @@
 
 **A multi-system synthesis AI agent that retrieves, reconciles, and synthesizes enterprise data into actionable insights with full source attribution.**
 
-![IBM watsonx](https://img.shields.io/badge/IBM-watsonx-052FAD)
-![Google AI Studio](https://img.shields.io/badge/Google-AI%20Studio-4285F4)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)
+
 
 ---
 
