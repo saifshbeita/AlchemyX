@@ -7,14 +7,13 @@ import AgentView from './components/AgentView';
 const App: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activePrompt, setActivePrompt] = useState<string>('');
-  const [promptTrigger, setPromptTrigger] = useState(0); // specific trigger to ensure re-renders on same prompt click
-
+  const [promptTrigger, setPromptTrigger] = useState(0); 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
   const handlePromptSelect = (text: string) => {
     setActivePrompt(text);
     setPromptTrigger(prev => prev + 1);
-    // On mobile, close sidebar after selection
+   
     if (window.innerWidth < 768) {
       setIsSidebarOpen(false);
     }
