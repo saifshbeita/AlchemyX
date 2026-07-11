@@ -1,29 +1,38 @@
 {
   "compilerOptions": {
+    /* Target Environments & Language Standards */
     "target": "ES2022",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
-    "module": "ESNext",
     "lib": [
       "ES2022",
       "DOM",
       "DOM.Iterable"
     ],
-    "skipLibCheck": true,
-    "types": [
-      "node"
-    ],
-    "moduleResolution": "bundler",
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "allowJs": true,
     "jsx": "react-jsx",
+
+    /* Module Compilation & Resolutions */
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+
+    /* Paths & Project Bindings */
     "paths": {
       "@/*": [
         "./*"
       ]
     },
-    "allowImportingTsExtensions": true,
-    "noEmit": true
+
+    /* Strict Mode and Flag Declarations */
+    "allowJs": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+
+    /* Class Configurations & Decorators */
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false
   }
 }
