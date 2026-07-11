@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    /* Target Environments & Language Standards */
+    
     "target": "ES2022",
     "lib": [
       "ES2022",
