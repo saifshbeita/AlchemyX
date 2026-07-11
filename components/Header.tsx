@@ -6,14 +6,14 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
-  // Common style variables for visual consistency
+  
   const containerStyles = "fixed top-0 left-0 right-0 h-16 z-40 bg-white/80 dark:bg-[#161616]/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 flex items-center justify-between px-4 md:px-6";
   const statusBadgeStyles = "hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-500/10 border border-green-500/20";
 
   return (
     <header className={containerStyles}>
       <div className="flex items-center gap-3">
-        {/* Navigation toggle interaction trigger */}
+        
         <button 
           onClick={onMenuClick}
           className="md:hidden p-2 -ml-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
           <Menu size={24} />
         </button>
         
-        {/* Core application identity block */}
+        
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/20">
             <Database className="text-white w-4 h-4" />
@@ -38,7 +38,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
         </div>
       </div>
 
-      {/* Global connection monitoring controls */}
+      
       <div className="flex items-center gap-4">
         <div className={statusBadgeStyles}>
           <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
