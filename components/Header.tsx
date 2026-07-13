@@ -56,5 +56,3 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
 };
 
 export default Header;
-
-export default Header;
