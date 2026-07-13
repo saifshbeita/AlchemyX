@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Loader2, AlertCircle, Check, Terminal, Send, Sparkles, Copy, ClipboardCheck } from 'lucide-react';
+import {
+  AGENT_ENVIRONMENT_ID,
+  AGENT_ID,
+  ORCHESTRATION_ID,
+  WATSONX_HOST_URL,
+  WXO_LOADER_URL,
+} from '../config/watsonx';
 
 const AGENT_CONTAINER_ID = "wxo-agent-container";
 
@@ -49,18 +56,18 @@ const AgentView: React.FC<AgentViewProps> = ({ initialPrompt, promptTrigger }) =
     // We map the rootElementID to our specific container, NOT the body 'root', 
     // to ensure the app UI (headers/sidebar) remains visible.
     window.wxOConfiguration = {
-        orchestrationID: "20251121-1830-5615-7055-b1ff09c76737_20251121-1832-0969-5054-48a1d2194633",
-        hostURL: "https://dl.watson-orchestrate.ibm.com",
+        orchestrationID: ORCHESTRATION_ID,
+        hostURL: WATSONX_HOST_URL,
         rootElementID: AGENT_CONTAINER_ID,
         chatOptions: {
-            agentId: "eadc80f5-235f-424f-87c3-c41b80f4bf98", 
-            agentEnvironmentId: "fabcfa78-0426-4da7-a93e-352a43ac8bf0",
+            agentId: AGENT_ID,
+            agentEnvironmentId: AGENT_ENVIRONMENT_ID,
         }
     };
 
     const initScript = setTimeout(function () {
-        const scriptUrl = `${window.wxOConfiguration?.hostURL}/wxochat/wxoLoader.js?embed=true`;
-        
+        const scriptUrl = WXO_LOADER_URL;
+
         // Check if script exists to prevent duplicates in React Strict Mode
         if (document.querySelector(`script[src="${scriptUrl}"]`)) {
             if (window.wxoLoader) {
